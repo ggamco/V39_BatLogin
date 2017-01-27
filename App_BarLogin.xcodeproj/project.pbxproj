@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		09C8E16E1E3BC9A500BCECE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */; };
-		09C8E1701E3BC9A500BCECE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E16F1E3BC9A500BCECE6 /* ViewController.swift */; };
 		09C8E1731E3BC9A600BCECE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8E1711E3BC9A600BCECE6 /* Main.storyboard */; };
 		09C8E1751E3BC9A600BCECE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C8E1741E3BC9A600BCECE6 /* Assets.xcassets */; };
 		09C8E1781E3BC9A600BCECE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8E1761E3BC9A600BCECE6 /* LaunchScreen.storyboard */; };
+		09C8E1801E3BD25F00BCECE6 /* BAT_SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */; };
+		09C8E1821E3BD27200BCECE6 /* BAT_LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */; };
+		09C8E1841E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09C8E16A1E3BC9A500BCECE6 /* App_BarLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_BarLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09C8E16F1E3BC9A500BCECE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09C8E1721E3BC9A600BCECE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09C8E1741E3BC9A600BCECE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C8E1771E3BC9A600BCECE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C8E1791E3BC9A600BCECE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_SplashVC.swift; sourceTree = "<group>"; };
+		09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_LoginVC.swift; sourceTree = "<group>"; };
+		09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_RootTabBarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */,
-				09C8E16F1E3BC9A500BCECE6 /* ViewController.swift */,
+				09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */,
+				09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */,
+				09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */,
 				09C8E1711E3BC9A600BCECE6 /* Main.storyboard */,
 				09C8E1741E3BC9A600BCECE6 /* Assets.xcassets */,
 				09C8E1761E3BC9A600BCECE6 /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C8E1701E3BC9A500BCECE6 /* ViewController.swift in Sources */,
+				09C8E1841E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift in Sources */,
+				09C8E1821E3BD27200BCECE6 /* BAT_LoginVC.swift in Sources */,
 				09C8E16E1E3BC9A500BCECE6 /* AppDelegate.swift in Sources */,
+				09C8E1801E3BD25F00BCECE6 /* BAT_SplashVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

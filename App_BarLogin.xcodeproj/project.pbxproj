@@ -14,6 +14,25 @@
 		09C8E1801E3BD25F00BCECE6 /* BAT_SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */; };
 		09C8E1821E3BD27200BCECE6 /* BAT_LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */; };
 		09C8E1841E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */; };
+		09F3D1E91E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1E81E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift */; };
+		09F3D1EB1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1EA1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift */; };
+		09F3D1ED1E44D96900F6F1DF /* BAT_MiPerfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1EC1E44D96900F6F1DF /* BAT_MiPerfilVC.swift */; };
+		09F3D1EF1E44D97C00F6F1DF /* BAT_WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1EE1E44D97C00F6F1DF /* BAT_WebVC.swift */; };
+		09F3D1F41E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1F21E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.swift */; };
+		09F3D1F51E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1F31E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.xib */; };
+		09F3D2021E44DAA400F6F1DF /* backPerfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1F71E44DAA400F6F1DF /* backPerfil.png */; };
+		09F3D2031E44DAA400F6F1DF /* brad-pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1F81E44DAA400F6F1DF /* brad-pitt.jpg */; };
+		09F3D2041E44DAA400F6F1DF /* Contactos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1F91E44DAA400F6F1DF /* Contactos.plist */; };
+		09F3D2051E44DAA400F6F1DF /* depp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1FA1E44DAA400F6F1DF /* depp.jpg */; };
+		09F3D2061E44DAA400F6F1DF /* fondodegradado.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1FB1E44DAA400F6F1DF /* fondodegradado.png */; };
+		09F3D2071E44DAA400F6F1DF /* kunis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1FC1E44DAA400F6F1DF /* kunis.jpg */; };
+		09F3D2081E44DAA400F6F1DF /* Miranda_Lambert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1FD1E44DAA400F6F1DF /* Miranda_Lambert.jpg */; };
+		09F3D2091E44DAA400F6F1DF /* Sara_Evans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1FE1E44DAA400F6F1DF /* Sara_Evans.jpg */; };
+		09F3D20A1E44DAA400F6F1DF /* steve_jobs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D1FF1E44DAA400F6F1DF /* steve_jobs.jpg */; };
+		09F3D20B1E44DAA400F6F1DF /* Taylor_Swift2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D2001E44DAA400F6F1DF /* Taylor_Swift2.jpg */; };
+		09F3D20C1E44DAA400F6F1DF /* thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F3D2011E44DAA400F6F1DF /* thor.jpg */; };
+		09F3D20F1E44E10A00F6F1DF /* API_UTILS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D20E1E44E10A00F6F1DF /* API_UTILS.swift */; };
+		09F3D2111E44F7BC00F6F1DF /* DELEGADOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D2101E44F7BC00F6F1DF /* DELEGADOS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +45,25 @@
 		09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_SplashVC.swift; sourceTree = "<group>"; };
 		09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_LoginVC.swift; sourceTree = "<group>"; };
 		09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_RootTabBarVC.swift; sourceTree = "<group>"; };
+		09F3D1E81E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_ListadoContactosTVC.swift; sourceTree = "<group>"; };
+		09F3D1EA1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_DetalleContactoVC.swift; sourceTree = "<group>"; };
+		09F3D1EC1E44D96900F6F1DF /* BAT_MiPerfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_MiPerfilVC.swift; sourceTree = "<group>"; };
+		09F3D1EE1E44D97C00F6F1DF /* BAT_WebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_WebVC.swift; sourceTree = "<group>"; };
+		09F3D1F21E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_VistaMiContactoCustomCell.swift; sourceTree = "<group>"; };
+		09F3D1F31E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAT_VistaMiContactoCustomCell.xib; sourceTree = "<group>"; };
+		09F3D1F71E44DAA400F6F1DF /* backPerfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backPerfil.png; sourceTree = "<group>"; };
+		09F3D1F81E44DAA400F6F1DF /* brad-pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "brad-pitt.jpg"; sourceTree = "<group>"; };
+		09F3D1F91E44DAA400F6F1DF /* Contactos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contactos.plist; sourceTree = "<group>"; };
+		09F3D1FA1E44DAA400F6F1DF /* depp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = depp.jpg; sourceTree = "<group>"; };
+		09F3D1FB1E44DAA400F6F1DF /* fondodegradado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondodegradado.png; sourceTree = "<group>"; };
+		09F3D1FC1E44DAA400F6F1DF /* kunis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kunis.jpg; sourceTree = "<group>"; };
+		09F3D1FD1E44DAA400F6F1DF /* Miranda_Lambert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Miranda_Lambert.jpg; sourceTree = "<group>"; };
+		09F3D1FE1E44DAA400F6F1DF /* Sara_Evans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sara_Evans.jpg; sourceTree = "<group>"; };
+		09F3D1FF1E44DAA400F6F1DF /* steve_jobs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steve_jobs.jpg; sourceTree = "<group>"; };
+		09F3D2001E44DAA400F6F1DF /* Taylor_Swift2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Taylor_Swift2.jpg; sourceTree = "<group>"; };
+		09F3D2011E44DAA400F6F1DF /* thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thor.jpg; sourceTree = "<group>"; };
+		09F3D20E1E44E10A00F6F1DF /* API_UTILS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_UTILS.swift; sourceTree = "<group>"; };
+		09F3D2101E44F7BC00F6F1DF /* DELEGADOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DELEGADOS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +97,66 @@
 			isa = PBXGroup;
 			children = (
 				09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */,
-				09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */,
-				09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */,
-				09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */,
+				09F3D20E1E44E10A00F6F1DF /* API_UTILS.swift */,
+				09F3D2101E44F7BC00F6F1DF /* DELEGADOS.swift */,
+				09F3D20D1E44DAAC00F6F1DF /* RESOURCES */,
+				09F3D1F01E44D98500F6F1DF /* VIEWS_CONTACTOS */,
+				09F3D1F11E44D99E00F6F1DF /* VIEWS_LOGIN */,
 				09C8E1711E3BC9A600BCECE6 /* Main.storyboard */,
 				09C8E1741E3BC9A600BCECE6 /* Assets.xcassets */,
 				09C8E1761E3BC9A600BCECE6 /* LaunchScreen.storyboard */,
 				09C8E1791E3BC9A600BCECE6 /* Info.plist */,
 			);
 			path = App_BarLogin;
+			sourceTree = "<group>";
+		};
+		09F3D1F01E44D98500F6F1DF /* VIEWS_CONTACTOS */ = {
+			isa = PBXGroup;
+			children = (
+				09F3D1F91E44DAA400F6F1DF /* Contactos.plist */,
+				09F3D1E81E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift */,
+				09F3D1F61E44D9E400F6F1DF /* XIB_MICONTACTO_CELL */,
+				09F3D1EA1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift */,
+				09F3D1EC1E44D96900F6F1DF /* BAT_MiPerfilVC.swift */,
+				09F3D1EE1E44D97C00F6F1DF /* BAT_WebVC.swift */,
+			);
+			name = VIEWS_CONTACTOS;
+			sourceTree = "<group>";
+		};
+		09F3D1F11E44D99E00F6F1DF /* VIEWS_LOGIN */ = {
+			isa = PBXGroup;
+			children = (
+				09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */,
+				09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */,
+				09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */,
+			);
+			name = VIEWS_LOGIN;
+			sourceTree = "<group>";
+		};
+		09F3D1F61E44D9E400F6F1DF /* XIB_MICONTACTO_CELL */ = {
+			isa = PBXGroup;
+			children = (
+				09F3D1F21E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.swift */,
+				09F3D1F31E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.xib */,
+			);
+			name = XIB_MICONTACTO_CELL;
+			sourceTree = "<group>";
+		};
+		09F3D20D1E44DAAC00F6F1DF /* RESOURCES */ = {
+			isa = PBXGroup;
+			children = (
+				09F3D1F71E44DAA400F6F1DF /* backPerfil.png */,
+				09F3D1F81E44DAA400F6F1DF /* brad-pitt.jpg */,
+				09F3D1FA1E44DAA400F6F1DF /* depp.jpg */,
+				09F3D1FB1E44DAA400F6F1DF /* fondodegradado.png */,
+				09F3D1FC1E44DAA400F6F1DF /* kunis.jpg */,
+				09F3D1FD1E44DAA400F6F1DF /* Miranda_Lambert.jpg */,
+				09F3D1FE1E44DAA400F6F1DF /* Sara_Evans.jpg */,
+				09F3D1FF1E44DAA400F6F1DF /* steve_jobs.jpg */,
+				09F3D2001E44DAA400F6F1DF /* Taylor_Swift2.jpg */,
+				09F3D2011E44DAA400F6F1DF /* thor.jpg */,
+			);
+			name = RESOURCES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +218,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F3D20A1E44DAA400F6F1DF /* steve_jobs.jpg in Resources */,
+				09F3D20C1E44DAA400F6F1DF /* thor.jpg in Resources */,
+				09F3D2051E44DAA400F6F1DF /* depp.jpg in Resources */,
 				09C8E1781E3BC9A600BCECE6 /* LaunchScreen.storyboard in Resources */,
+				09F3D2021E44DAA400F6F1DF /* backPerfil.png in Resources */,
+				09F3D2041E44DAA400F6F1DF /* Contactos.plist in Resources */,
+				09F3D20B1E44DAA400F6F1DF /* Taylor_Swift2.jpg in Resources */,
+				09F3D2091E44DAA400F6F1DF /* Sara_Evans.jpg in Resources */,
+				09F3D2071E44DAA400F6F1DF /* kunis.jpg in Resources */,
+				09F3D1F51E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.xib in Resources */,
 				09C8E1751E3BC9A600BCECE6 /* Assets.xcassets in Resources */,
+				09F3D2081E44DAA400F6F1DF /* Miranda_Lambert.jpg in Resources */,
 				09C8E1731E3BC9A600BCECE6 /* Main.storyboard in Resources */,
+				09F3D2061E44DAA400F6F1DF /* fondodegradado.png in Resources */,
+				09F3D2031E44DAA400F6F1DF /* brad-pitt.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,10 +243,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F3D20F1E44E10A00F6F1DF /* API_UTILS.swift in Sources */,
+				09F3D1E91E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift in Sources */,
 				09C8E1841E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift in Sources */,
 				09C8E1821E3BD27200BCECE6 /* BAT_LoginVC.swift in Sources */,
+				09F3D1ED1E44D96900F6F1DF /* BAT_MiPerfilVC.swift in Sources */,
+				09F3D1EB1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift in Sources */,
 				09C8E16E1E3BC9A500BCECE6 /* AppDelegate.swift in Sources */,
+				09F3D2111E44F7BC00F6F1DF /* DELEGADOS.swift in Sources */,
 				09C8E1801E3BD25F00BCECE6 /* BAT_SplashVC.swift in Sources */,
+				09F3D1F41E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.swift in Sources */,
+				09F3D1EF1E44D97C00F6F1DF /* BAT_WebVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +415,7 @@
 				09C8E17E1E3BC9A600BCECE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

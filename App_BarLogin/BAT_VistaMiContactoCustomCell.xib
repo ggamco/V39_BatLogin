@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VistaMiContactoCustomCell" rowHeight="140" id="KGk-i7-Jjw" customClass="BAT_VistaMiContactoCustomCell" customModule="App_BarLogin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miranda_Lambert.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jch-BP-Ibn"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondodegradado.png" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-5A-zd4">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="115" id="h7U-Hq-Y6g"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTE-e3-9ww">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="31P-6A-XBG"/>
+                            <constraint firstAttribute="height" constant="21" id="S4M-q6-LgP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzA-sQ-cBQ">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="115" id="uD7-0e-EJM"/>
+                            <constraint firstAttribute="height" constant="21" id="xIm-lQ-nhz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NzA-sQ-cBQ" secondAttribute="bottom" constant="2" id="3Vp-B1-54C"/>
+                    <constraint firstAttribute="trailing" secondItem="PDF-5A-zd4" secondAttribute="trailing" id="FJu-Um-XLz"/>
+                    <constraint firstAttribute="trailing" secondItem="jch-BP-Ibn" secondAttribute="trailing" id="Ra7-bR-9eE"/>
+                    <constraint firstItem="PDF-5A-zd4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ru2-Fo-vHV"/>
+                    <constraint firstItem="jch-BP-Ibn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WBJ-SK-gks"/>
+                    <constraint firstAttribute="bottom" secondItem="jch-BP-Ibn" secondAttribute="bottom" id="gRu-X3-0Ei"/>
+                    <constraint firstAttribute="bottom" secondItem="gTE-e3-9ww" secondAttribute="bottom" constant="22.5" id="hkA-wQ-pWb"/>
+                    <constraint firstItem="jch-BP-Ibn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jVL-Lo-mdK"/>
+                    <constraint firstAttribute="trailing" secondItem="gTE-e3-9ww" secondAttribute="trailing" constant="8" id="q00-KV-r8N"/>
+                    <constraint firstAttribute="bottom" secondItem="PDF-5A-zd4" secondAttribute="bottom" id="sPn-yw-INg"/>
+                    <constraint firstAttribute="trailing" secondItem="NzA-sQ-cBQ" secondAttribute="trailing" constant="8" id="sgy-4A-d93"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myApellidoLB" destination="NzA-sQ-cBQ" id="RxF-EI-vME"/>
+                <outlet property="myFotoContacto" destination="jch-BP-Ibn" id="aN3-Hj-ICU"/>
+                <outlet property="myNombreLB" destination="gTE-e3-9ww" id="OSE-9G-f7X"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="100"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Miranda_Lambert.jpg" width="1800" height="1365"/>
+        <image name="fondodegradado.png" width="726" height="443"/>
+    </resources>
+</document>

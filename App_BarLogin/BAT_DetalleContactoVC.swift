@@ -31,19 +31,19 @@ class BAT_DetalleContactoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let imagen = UIImage(named: dataContacto["imageProfile"]!)
+        let imagen = UIImage(named: dataContacto["imageProfile"]! as! String)
         myFotoPerfil.image = imagen
         
-        myNombre.text = dataContacto["firstName"]
-        myApellido.text = dataContacto["lastName"]
-        myMovil.text = dataContacto["telefonoMovil"]
-        myTrabajo.text = dataContacto["telefonoTrabajo"]
-        myEmail.text = dataContacto["email"]
-        myExtracto.text = dataContacto["abstractoVC"]
-        myDescripcion.text = dataContacto["description"]
-        myCreado.text = dataContacto["createdPost"]
-        myTwitter.text = dataContacto["usernameTwitter"]
-        myLinkedin.text = dataContacto["cuentaLinkedin"]
+        myNombre.text = dataContacto["firstName"] as! String?
+        myApellido.text = dataContacto["lastName"] as! String?
+        myMovil.text = dataContacto["telefonoMovil"] as! String?
+        myTrabajo.text = dataContacto["telefonoTrabajo"] as! String?
+        myEmail.text = dataContacto["email"] as! String?
+        myExtracto.text = dataContacto["abstractoVC"] as! String?
+        myDescripcion.text = dataContacto["description"] as! String?
+        myCreado.text = dataContacto["createdPost"] as! String?
+        myTwitter.text = dataContacto["usernameTwitter"] as! String?
+        myLinkedin.text = dataContacto["cuentaLinkedin"] as! String?
         // Do any additional setup after loading the view.
     }
 

@@ -63,9 +63,9 @@ class BAT_ListadoContactosTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let miPerfilCell = tableView.dequeueReusableCell(withIdentifier: "VistaMiContactoCustomCell", for: indexPath) as! BAT_VistaMiContactoCustomCell
         diccionariosContactos = arrayContactos[indexPath.row]
-        miPerfilCell.myFotoContacto.image = UIImage(named: diccionariosContactos["imageProfile"]!)
-        miPerfilCell.myNombreLB.text = diccionariosContactos["firstName"]
-        miPerfilCell.myApellidoLB.text = diccionariosContactos["lastName"]
+        miPerfilCell.myFotoContacto.image = UIImage(named: diccionariosContactos["imageProfile"]! as! String)
+        miPerfilCell.myNombreLB.text = diccionariosContactos["firstName"] as! String?
+        miPerfilCell.myApellidoLB.text = diccionariosContactos["lastName"] as! String?
 
         return miPerfilCell
     }

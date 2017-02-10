@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSCameraUsageDescription</key>
+	<string>La aplicación necesita acceder a la cámara del dispositivo</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>La aplicación necesita acceder a la libreria de fotos del dispositivo</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

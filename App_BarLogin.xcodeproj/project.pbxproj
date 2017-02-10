@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C4C90B1E4E16A20050A190 /* BAT_ListaTareasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C90A1E4E16A20050A190 /* BAT_ListaTareasTVC.swift */; };
+		09C4C90E1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C90C1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.swift */; };
+		09C4C90F1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09C4C90D1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.xib */; };
+		09C4C9111E4E17060050A190 /* BAT_ListaIconosCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C9101E4E17060050A190 /* BAT_ListaIconosCVC.swift */; };
+		09C4C9131E4E17900050A190 /* BAT_DetalleIconoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C9121E4E17900050A190 /* BAT_DetalleIconoCVCell.swift */; };
+		09C4C9151E4E17C70050A190 /* BAT_CabeceraDescripcionCRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C9141E4E17C70050A190 /* BAT_CabeceraDescripcionCRV.swift */; };
+		09C4C9171E4E17F50050A190 /* BAT_NuevaTareaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C9161E4E17F50050A190 /* BAT_NuevaTareaTVC.swift */; };
+		09C4C91B1E4E380A0050A190 /* API_TareasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4C91A1E4E380A0050A190 /* API_TareasManager.swift */; };
 		09C8E16E1E3BC9A500BCECE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */; };
 		09C8E1731E3BC9A600BCECE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C8E1711E3BC9A600BCECE6 /* Main.storyboard */; };
 		09C8E1751E3BC9A600BCECE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C8E1741E3BC9A600BCECE6 /* Assets.xcassets */; };
@@ -36,6 +44,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09C4C90A1E4E16A20050A190 /* BAT_ListaTareasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_ListaTareasTVC.swift; sourceTree = "<group>"; };
+		09C4C90C1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_DetalleTareaTVCell.swift; sourceTree = "<group>"; };
+		09C4C90D1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAT_DetalleTareaTVCell.xib; sourceTree = "<group>"; };
+		09C4C9101E4E17060050A190 /* BAT_ListaIconosCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_ListaIconosCVC.swift; sourceTree = "<group>"; };
+		09C4C9121E4E17900050A190 /* BAT_DetalleIconoCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_DetalleIconoCVCell.swift; sourceTree = "<group>"; };
+		09C4C9141E4E17C70050A190 /* BAT_CabeceraDescripcionCRV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_CabeceraDescripcionCRV.swift; sourceTree = "<group>"; };
+		09C4C9161E4E17F50050A190 /* BAT_NuevaTareaTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_NuevaTareaTVC.swift; sourceTree = "<group>"; };
+		09C4C91A1E4E380A0050A190 /* API_TareasManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_TareasManager.swift; sourceTree = "<group>"; };
 		09C8E16A1E3BC9A500BCECE6 /* App_BarLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_BarLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C8E1721E3BC9A600BCECE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +93,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C4C9181E4E18130050A190 /* VIEWS_NuevaTarea */ = {
+			isa = PBXGroup;
+			children = (
+				09C4C90A1E4E16A20050A190 /* BAT_ListaTareasTVC.swift */,
+				09C4C9191E4E303F0050A190 /* XIB_NUEVATAREA */,
+				09C4C9101E4E17060050A190 /* BAT_ListaIconosCVC.swift */,
+				09C4C9121E4E17900050A190 /* BAT_DetalleIconoCVCell.swift */,
+				09C4C9141E4E17C70050A190 /* BAT_CabeceraDescripcionCRV.swift */,
+				09C4C9161E4E17F50050A190 /* BAT_NuevaTareaTVC.swift */,
+			);
+			name = VIEWS_NuevaTarea;
+			sourceTree = "<group>";
+		};
+		09C4C9191E4E303F0050A190 /* XIB_NUEVATAREA */ = {
+			isa = PBXGroup;
+			children = (
+				09C4C90C1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.swift */,
+				09C4C90D1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.xib */,
+			);
+			name = XIB_NUEVATAREA;
+			sourceTree = "<group>";
+		};
 		09C8E1611E3BC9A500BCECE6 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */,
+				09C4C9181E4E18130050A190 /* VIEWS_NuevaTarea */,
 				09F3D20E1E44E10A00F6F1DF /* API_UTILS.swift */,
+				09C4C91A1E4E380A0050A190 /* API_TareasManager.swift */,
 				09F3D2101E44F7BC00F6F1DF /* DELEGADOS.swift */,
 				09F3D20D1E44DAAC00F6F1DF /* RESOURCES */,
 				09F3D1F01E44D98500F6F1DF /* VIEWS_CONTACTOS */,
@@ -221,6 +261,7 @@
 				09F3D20A1E44DAA400F6F1DF /* steve_jobs.jpg in Resources */,
 				09F3D20C1E44DAA400F6F1DF /* thor.jpg in Resources */,
 				09F3D2051E44DAA400F6F1DF /* depp.jpg in Resources */,
+				09C4C90F1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.xib in Resources */,
 				09C8E1781E3BC9A600BCECE6 /* LaunchScreen.storyboard in Resources */,
 				09F3D2021E44DAA400F6F1DF /* backPerfil.png in Resources */,
 				09F3D2041E44DAA400F6F1DF /* Contactos.plist in Resources */,
@@ -243,17 +284,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C4C90E1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.swift in Sources */,
 				09F3D20F1E44E10A00F6F1DF /* API_UTILS.swift in Sources */,
 				09F3D1E91E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift in Sources */,
+				09C4C9111E4E17060050A190 /* BAT_ListaIconosCVC.swift in Sources */,
+				09C4C91B1E4E380A0050A190 /* API_TareasManager.swift in Sources */,
 				09C8E1841E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift in Sources */,
 				09C8E1821E3BD27200BCECE6 /* BAT_LoginVC.swift in Sources */,
+				09C4C9171E4E17F50050A190 /* BAT_NuevaTareaTVC.swift in Sources */,
 				09F3D1ED1E44D96900F6F1DF /* BAT_MiPerfilVC.swift in Sources */,
 				09F3D1EB1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift in Sources */,
+				09C4C9131E4E17900050A190 /* BAT_DetalleIconoCVCell.swift in Sources */,
 				09C8E16E1E3BC9A500BCECE6 /* AppDelegate.swift in Sources */,
+				09C4C9151E4E17C70050A190 /* BAT_CabeceraDescripcionCRV.swift in Sources */,
 				09F3D2111E44F7BC00F6F1DF /* DELEGADOS.swift in Sources */,
 				09C8E1801E3BD25F00BCECE6 /* BAT_SplashVC.swift in Sources */,
 				09F3D1F41E44D9DD00F6F1DF /* BAT_VistaMiContactoCustomCell.swift in Sources */,
 				09F3D1EF1E44D97C00F6F1DF /* BAT_WebVC.swift in Sources */,
+				09C4C90B1E4E16A20050A190 /* BAT_ListaTareasTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

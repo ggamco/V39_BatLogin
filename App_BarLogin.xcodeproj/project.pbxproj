@@ -22,6 +22,8 @@
 		09C8E1801E3BD25F00BCECE6 /* BAT_SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */; };
 		09C8E1821E3BD27200BCECE6 /* BAT_LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */; };
 		09C8E1841E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */; };
+		09D672871E574CBE00C377C7 /* BAT_AcordesGuitarraVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D672861E574CBE00C377C7 /* BAT_AcordesGuitarraVCViewController.swift */; };
+		09D672891E57508F00C377C7 /* BAT_AcordesPianoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D672881E57508F00C377C7 /* BAT_AcordesPianoVC.swift */; };
 		09F3D1E91E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1E81E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift */; };
 		09F3D1EB1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1EA1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift */; };
 		09F3D1ED1E44D96900F6F1DF /* BAT_MiPerfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3D1EC1E44D96900F6F1DF /* BAT_MiPerfilVC.swift */; };
@@ -61,6 +63,8 @@
 		09C8E17F1E3BD25F00BCECE6 /* BAT_SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_SplashVC.swift; sourceTree = "<group>"; };
 		09C8E1811E3BD27200BCECE6 /* BAT_LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_LoginVC.swift; sourceTree = "<group>"; };
 		09C8E1831E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_RootTabBarVC.swift; sourceTree = "<group>"; };
+		09D672861E574CBE00C377C7 /* BAT_AcordesGuitarraVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_AcordesGuitarraVCViewController.swift; sourceTree = "<group>"; };
+		09D672881E57508F00C377C7 /* BAT_AcordesPianoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_AcordesPianoVC.swift; sourceTree = "<group>"; };
 		09F3D1E81E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_ListadoContactosTVC.swift; sourceTree = "<group>"; };
 		09F3D1EA1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_DetalleContactoVC.swift; sourceTree = "<group>"; };
 		09F3D1EC1E44D96900F6F1DF /* BAT_MiPerfilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAT_MiPerfilVC.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				09C8E16D1E3BC9A500BCECE6 /* AppDelegate.swift */,
+				09D6728A1E57509400C377C7 /* VIEWS_Acordes */,
 				09C4C9181E4E18130050A190 /* VIEWS_NuevaTarea */,
 				09F3D20E1E44E10A00F6F1DF /* API_UTILS.swift */,
 				09C4C91A1E4E380A0050A190 /* API_TareasManager.swift */,
@@ -148,6 +153,15 @@
 				09C8E1791E3BC9A600BCECE6 /* Info.plist */,
 			);
 			path = App_BarLogin;
+			sourceTree = "<group>";
+		};
+		09D6728A1E57509400C377C7 /* VIEWS_Acordes */ = {
+			isa = PBXGroup;
+			children = (
+				09D672861E574CBE00C377C7 /* BAT_AcordesGuitarraVCViewController.swift */,
+				09D672881E57508F00C377C7 /* BAT_AcordesPianoVC.swift */,
+			);
+			name = VIEWS_Acordes;
 			sourceTree = "<group>";
 		};
 		09F3D1F01E44D98500F6F1DF /* VIEWS_CONTACTOS */ = {
@@ -286,11 +300,13 @@
 			files = (
 				09C4C90E1E4E16CF0050A190 /* BAT_DetalleTareaTVCell.swift in Sources */,
 				09F3D20F1E44E10A00F6F1DF /* API_UTILS.swift in Sources */,
+				09D672891E57508F00C377C7 /* BAT_AcordesPianoVC.swift in Sources */,
 				09F3D1E91E44D91700F6F1DF /* BAT_ListadoContactosTVC.swift in Sources */,
 				09C4C9111E4E17060050A190 /* BAT_ListaIconosCVC.swift in Sources */,
 				09C4C91B1E4E380A0050A190 /* API_TareasManager.swift in Sources */,
 				09C8E1841E3BD29E00BCECE6 /* BAT_RootTabBarVC.swift in Sources */,
 				09C8E1821E3BD27200BCECE6 /* BAT_LoginVC.swift in Sources */,
+				09D672871E574CBE00C377C7 /* BAT_AcordesGuitarraVCViewController.swift in Sources */,
 				09C4C9171E4E17F50050A190 /* BAT_NuevaTareaTVC.swift in Sources */,
 				09F3D1ED1E44D96900F6F1DF /* BAT_MiPerfilVC.swift in Sources */,
 				09F3D1EB1E44D94400F6F1DF /* BAT_DetalleContactoVC.swift in Sources */,

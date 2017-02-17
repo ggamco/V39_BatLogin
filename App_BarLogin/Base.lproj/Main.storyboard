@@ -522,10 +522,10 @@
             </objects>
             <point key="canvasLocation" x="2569" y="-146"/>
         </scene>
-        <!--View Controller-->
+        <!--Acordes GuitarraVC View Controller-->
         <scene sceneID="iMm-pV-Xg4">
             <objects>
-                <viewController id="KFF-vu-m6i" sceneMemberID="viewController">
+                <viewController id="KFF-vu-m6i" customClass="BAT_AcordesGuitarraVCViewController" customModule="App_BarLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="huK-Df-3gj"/>
                         <viewControllerLayoutGuide type="bottom" id="5Td-Uh-qfh"/>
@@ -686,7 +686,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X0W-J1-hVz">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="Yzv-bH-sQS">
+                        <barButtonItem key="rightBarButtonItem" title="Piano" id="Yzv-bH-sQS">
                             <connections>
                                 <segue destination="fIJ-wq-lgy" kind="push" id="jCY-CG-15U"/>
                             </connections>
@@ -1290,10 +1290,10 @@
             </objects>
             <point key="canvasLocation" x="3489" y="1402"/>
         </scene>
-        <!--View Controller-->
+        <!--Acordes PianoVC-->
         <scene sceneID="hHa-pO-TOO">
             <objects>
-                <viewController id="fIJ-wq-lgy" sceneMemberID="viewController">
+                <viewController id="fIJ-wq-lgy" customClass="BAT_AcordesPianoVC" customModule="App_BarLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pIh-zb-W7C"/>
                         <viewControllerLayoutGuide type="bottom" id="Ljd-ui-bsm"/>
@@ -1301,13 +1301,196 @@
                     <view key="view" contentMode="scaleToFill" id="7hp-3L-KMG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="1hn-TQ-9WA">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Cg9-FJ-ve8">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yp-kI-g09">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="DO">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="fef-x3-h76"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjJ-jj-7JF">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="RE">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="sep-SB-cEz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0C-6G-5SC">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="REm">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="NOr-AW-sgA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="6S7-Lt-Bl3"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="TDh-CD-Pd0"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="hc3-5u-ndl"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="nLV-dd-JH7">
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-2b-QBl">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="MI">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="bgp-cB-5WK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob2-vQ-ZYQ">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="MIm">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="Di1-Fp-Hh6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyo-GJ-Q2g">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="Fa">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="dWV-gq-skz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="DUf-Xy-MxZ"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="LRK-wV-DaY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GQ8-Bi-kX2">
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhH-3e-GVT">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="Fam">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="Xyl-OX-gYT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ew-gE-GLx">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="SOL">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="fBy-J1-hWq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjI-MD-EqP">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="LA">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="icX-h6-eq8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="xfJ-4b-702"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tSA-nb-EVk">
+                                        <subviews>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-tF-Cdf">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="Lam">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="rRT-08-aDm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3br-XJ-pFC">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="SI">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="JKc-SW-qoc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPi-7I-IiX">
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                                <state key="normal" title="SIm">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="acordeSeleccionado:" destination="fIJ-wq-lgy" eventType="touchUpInside" id="X03-We-nJ1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tSA-nb-EVk" firstAttribute="top" secondItem="1hn-TQ-9WA" secondAttribute="top" constant="126" id="6Xf-Le-m9a"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acorde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-SQ-7td">
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HU1-i8-sAF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_piano" translatesAutoresizingMaskIntoConstraints="NO" id="qXm-Q9-n4Q"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ce6-SQ-7td" firstAttribute="top" secondItem="qXm-Q9-n4Q" secondAttribute="bottom" id="2Av-1F-xZ7"/>
+                            <constraint firstItem="ce6-SQ-7td" firstAttribute="leading" secondItem="7hp-3L-KMG" secondAttribute="leading" id="3ux-Of-UoB"/>
+                            <constraint firstItem="1hn-TQ-9WA" firstAttribute="leading" secondItem="ce6-SQ-7td" secondAttribute="leading" id="9ye-dW-IhJ"/>
+                            <constraint firstItem="qXm-Q9-n4Q" firstAttribute="top" secondItem="pIh-zb-W7C" secondAttribute="bottom" id="FAw-95-cRq"/>
+                            <constraint firstItem="qXm-Q9-n4Q" firstAttribute="leading" secondItem="7hp-3L-KMG" secondAttribute="leading" id="LV4-3Y-hYN"/>
+                            <constraint firstItem="1hn-TQ-9WA" firstAttribute="trailing" secondItem="ce6-SQ-7td" secondAttribute="trailing" id="M8C-tK-JFf"/>
+                            <constraint firstItem="1hn-TQ-9WA" firstAttribute="top" secondItem="7hp-3L-KMG" secondAttribute="top" constant="450" id="QRn-dx-GfN"/>
+                            <constraint firstAttribute="trailing" secondItem="qXm-Q9-n4Q" secondAttribute="trailing" id="dFS-Kg-ump"/>
+                            <constraint firstItem="1hn-TQ-9WA" firstAttribute="bottom" secondItem="Ljd-ui-bsm" secondAttribute="top" id="hYP-xl-Omv"/>
+                            <constraint firstAttribute="trailing" secondItem="ce6-SQ-7td" secondAttribute="trailing" id="yhg-zF-xx2"/>
+                            <constraint firstItem="1hn-TQ-9WA" firstAttribute="top" secondItem="ce6-SQ-7td" secondAttribute="bottom" id="yhx-wS-9SK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d1s-cr-OFe"/>
+                    <connections>
+                        <outlet property="myImagenPiano" destination="qXm-Q9-n4Q" id="Pbt-FZ-Vfr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRE-d6-xrw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4374" y="622"/>
+            <point key="canvasLocation" x="4373.6000000000004" y="621.13943028485767"/>
         </scene>
         <!--Ajustes-->
         <scene sceneID="FCO-wY-bgB">
@@ -1460,5 +1643,6 @@
         <image name="img_logo_login" width="146" height="65"/>
         <image name="img_logo_splash" width="194" height="86"/>
         <image name="img_mastil" width="199" height="278"/>
+        <image name="img_piano" width="285" height="167"/>
     </resources>
 </document>

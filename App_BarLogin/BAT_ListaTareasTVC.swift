@@ -81,6 +81,12 @@ class BAT_ListaTareasTVC: UITableViewController {
         
         cell.myImagenTarea.image = UIImage(data: fotosModel[CONSTANTES.USER_DEFAULTS.KEY_IMAGEN_TAREA] as! Data)
         cell.myDescripcionTarea.text = tareasModel[CONSTANTES.USER_DEFAULTS.KEY_DESCRIPCION_TAREA] as! String?
+        
+        if let iconoTareaDes = tareasModel[CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA]{
+            cell.myIconoTarea.image = UIImage(named: iconoTareaDes as! String)
+        } else {
+            cell.myIconoTarea.image = UIImage(named: "img_no_icon")
+        }
 
         return cell
     }
@@ -90,6 +96,24 @@ class BAT_ListaTareasTVC: UITableViewController {
         return 300
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        if let indexPathDes = tableView.indexPathForSelectedRow {
+            
+            let destinationVC = storyboard?.instantiateViewController(withIdentifier: "ListaIconosCVC") as! BAT_ListaIconosCVC
+            
+            let tareaSelect = tareasManager.tareas[indexPath.row]
+            
+            destinationVC.cabeceraDescripcionTarea = tareaSelect[CONSTANTES.USER_DEFAULTS.KEY_DESCRIPCION_TAREA] as! String?
+            destinationVC.tareaSeleccionada = indexPathDes.row
+            
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+            
+        }
+        
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

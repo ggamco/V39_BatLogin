@@ -9,5 +9,9 @@
 import UIKit
 
 class BAT_CabeceraDescripcionCRV: UICollectionReusableView {
-        
+    
+    //MARK: - IBOutlets
+    @IBOutlet weak var myLabelDescripcionTarea: UILabel!
+    
+    
 }

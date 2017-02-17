@@ -42,6 +42,8 @@ class BAT_LoginVC: UIViewController {
                 let tabVC = self.storyboard?.instantiateViewController(withIdentifier: "RootTabBarVC") as! BAT_RootTabBarVC
                 tabVC.modalTransitionStyle = .crossDissolve
                 self.present(tabVC, animated: true, completion: nil)
+                
+                prefs.set(true, forKey: "Lanzamiento")
         }
         
     }

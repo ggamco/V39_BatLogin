@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ti7-4K-LU7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m7l-Tv-qcV">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -760,7 +760,7 @@
         <!--Lista TareasTVC-->
         <scene sceneID="7ve-ft-Qp7">
             <objects>
-                <tableViewController id="1xf-1g-hXC" customClass="BAT_ListaTareasTVC" customModule="App_BarLogin" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ListaTareasTVC" id="1xf-1g-hXC" customClass="BAT_ListaTareasTVC" customModule="App_BarLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="f2r-gb-Kkk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -792,30 +792,80 @@
             </objects>
             <point key="canvasLocation" x="3489" y="-146"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Lista IconosCVC-->
         <scene sceneID="BDM-Xx-Him">
             <objects>
-                <collectionViewController id="9RD-SL-Va4" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ZU9-75-PZ5">
+                <collectionViewController storyboardIdentifier="ListaIconosCVC" id="9RD-SL-Va4" customClass="BAT_ListaIconosCVC" customModule="App_BarLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="ZU9-75-PZ5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0OC-CU-k0I">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="itemSize" width="90" height="90"/>
+                            <size key="headerReferenceSize" width="50" height="80"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DoK-hf-iG1">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="DoK-hf-iG1" customClass="BAT_DetalleIconoCVCell" customModule="App_BarLogin" customModuleProvider="target">
+                                <rect key="frame" x="10" y="90" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZFZ-VQ-9FT">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="MGa-jm-LYM"/>
+                                                <constraint firstAttribute="width" constant="50" id="OUW-5O-Vkx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGB-Bw-qw3">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="gqH-q6-eHm"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="ZFZ-VQ-9FT" firstAttribute="top" secondItem="DoK-hf-iG1" secondAttribute="top" constant="8" id="Efy-Ip-u7W"/>
+                                    <constraint firstAttribute="trailing" secondItem="nGB-Bw-qw3" secondAttribute="trailing" constant="8" id="OSq-oF-LHn"/>
+                                    <constraint firstItem="nGB-Bw-qw3" firstAttribute="leading" secondItem="DoK-hf-iG1" secondAttribute="leading" constant="8" id="Pwn-4J-3c8"/>
+                                    <constraint firstItem="ZFZ-VQ-9FT" firstAttribute="centerX" secondItem="DoK-hf-iG1" secondAttribute="centerX" id="Xmr-G5-v1Q"/>
+                                    <constraint firstItem="nGB-Bw-qw3" firstAttribute="top" secondItem="ZFZ-VQ-9FT" secondAttribute="bottom" constant="4" id="lyh-op-jJD"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="myIconoImageView" destination="ZFZ-VQ-9FT" id="wSt-Oz-bFC"/>
+                                    <outlet property="myNombreIconoLB" destination="nGB-Bw-qw3" id="JkR-9X-oJ1"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReusableView" id="ImR-t1-PxD" customClass="BAT_CabeceraDescripcionCRV" customModule="App_BarLogin" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLG-Vb-bDc">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="fBf-iu-aqw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97636789083480835" green="0.97653156518936157" blue="0.97634488344192505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="BLG-Vb-bDc" firstAttribute="trailing" secondItem="ImR-t1-PxD" secondAttribute="trailingMargin" id="4JD-yJ-ZHv"/>
+                                <constraint firstItem="BLG-Vb-bDc" firstAttribute="leading" secondItem="ImR-t1-PxD" secondAttribute="leadingMargin" id="YOW-OV-r2Q"/>
+                                <constraint firstItem="BLG-Vb-bDc" firstAttribute="top" secondItem="ImR-t1-PxD" secondAttribute="topMargin" constant="13" id="eFx-Fa-cBv"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="myLabelDescripcionTarea" destination="BLG-Vb-bDc" id="qmK-kP-sd7"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="9RD-SL-Va4" id="zP0-ZE-QaV"/>
                             <outlet property="delegate" destination="9RD-SL-Va4" id="FUx-6C-4LQ"/>
@@ -824,7 +874,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CqW-wa-1TB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4374" y="-147"/>
+            <point key="canvasLocation" x="4373.6000000000004" y="-147.07646176911544"/>
         </scene>
         <!--Mi PerfilVC-->
         <scene sceneID="KVy-Om-caf">

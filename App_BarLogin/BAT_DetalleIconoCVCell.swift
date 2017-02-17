@@ -10,4 +10,9 @@ import UIKit
 
 class BAT_DetalleIconoCVCell: UICollectionViewCell {
     
+    //MARK: - IBOutlets
+    @IBOutlet weak var myIconoImageView: UIImageView!
+    @IBOutlet weak var myNombreIconoLB: UILabel!
+    
+    
 }

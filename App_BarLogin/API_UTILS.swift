@@ -33,6 +33,7 @@ struct UserDefaultsCustom {
     let KEY_DESCRIPCION_TAREA = "descripcion"
     let KEY_ICONO_TAREA = "icono"
     let KEY_IMAGEN_TAREA = "imagen"
+    let KEY_TITULO_ICONO = "titulo"
     
 }
 

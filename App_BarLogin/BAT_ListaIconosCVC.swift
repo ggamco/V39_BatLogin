@@ -8,20 +8,33 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
 
 class BAT_ListaIconosCVC: UICollectionViewController {
 
+    //MARK: - Variables locales
+    var listaIconos = arrayDiccionario()
+    var icono = [String]()
+    var cabeceraDescripcionTarea : String?
+    var tareaSeleccionada : Int?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_compra", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Compra"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_economia", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Economia"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_amigos", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Amigos"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_amor", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Amor"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_archivos", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Archivos"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_fechas", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Calendario"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_ideas", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Ideas"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_deportes", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Deportes"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_lugares", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Lugares"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_musica", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Musica"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_vacaciones", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Vacaciones"])
+        listaIconos.append([CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA : "img_icono_webs", CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO : "Webs"])
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,21 +56,50 @@ class BAT_ListaIconosCVC: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return listaIconos.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BAT_DetalleIconoCVCell
+        
+        let iconoCustom = listaIconos[indexPath.row]
+        
+        if let iconoDes = iconoCustom[CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA]{
+            cell.myIconoImageView.image = UIImage(named: iconoDes as! String)
+        }
+        
+        if let textoDes = iconoCustom[CONSTANTES.USER_DEFAULTS.KEY_TITULO_ICONO]{
+            cell.myNombreIconoLB.text = textoDes as? String
+        }
     
-        // Configure the cell
     
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let cabeceraCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ReusableView", for: indexPath) as! BAT_CabeceraDescripcionCRV
+        
+        cabeceraCell.myLabelDescripcionTarea.text = cabeceraDescripcionTarea
+        
+        return cabeceraCell
+        
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let iconoCustom = listaIconos[indexPath.row]
+        
+        if let tareaSeleccionadaDes = tareaSeleccionada{
+            tareasManager.tareas[tareaSeleccionadaDes][CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA] = iconoCustom[CONSTANTES.USER_DEFAULTS.KEY_ICONO_TAREA]
+            
+            _ = navigationController?.popViewController(animated: true)
+        }
     }
 
     // MARK: UICollectionViewDelegate

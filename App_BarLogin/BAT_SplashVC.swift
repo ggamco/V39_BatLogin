@@ -64,9 +64,18 @@ class BAT_SplashVC: UIViewController {
     }
     
     func comienzoApp(){
-        let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! BAT_LoginVC
-        loginVC.modalTransitionStyle = .crossDissolve
-        present(loginVC, animated: true, completion: nil)
+        
+        if prefs.bool(forKey: "Lanzamiento"){
+            let tabVC = self.storyboard?.instantiateViewController(withIdentifier: "RootTabBarVC") as! BAT_RootTabBarVC
+            tabVC.modalTransitionStyle = .crossDissolve
+            self.present(tabVC, animated: true, completion: nil)
+        } else {
+            let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! BAT_LoginVC
+            loginVC.modalTransitionStyle = .crossDissolve
+            present(loginVC, animated: true, completion: nil)
+        }
+        
+        
     }
     
     
